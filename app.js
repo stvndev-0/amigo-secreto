@@ -37,7 +37,6 @@ function listarAmigos() {
 }
 
 function sortearAmigo() {
-    console.log(amigos)
     if (amigos.length <= 1) {
         alert('Ingresa mas de un amigo.')
     } else {
@@ -45,11 +44,8 @@ function sortearAmigo() {
         const newSpan = document.createElement('span');
         const nombreAmigo = sorteo()
         
-        limpiarUl()
+        limpiarListaYarray()
         newSpan.innerHTML = `El amigo sorteado fue: ${nombreAmigo}`;
-
-        console.log(nombreAmigo, newSpan)
-    
     
         resultado.appendChild(newSpan);
     }
